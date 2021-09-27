@@ -43,6 +43,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // header selector
 const headerSelector = document.querySelector('header');
+const navigation = document.querySelector('.container header nav');
 const headerNav1 = headerSelector.querySelector('a');
 const headerNav2 = headerNav1.nextElementSibling;
 const headerNav3 = headerNav2.nextElementSibling;
@@ -132,4 +133,24 @@ contactSelectorEmail.textContent=siteContent['contact']['email'];
 
 // copyright content
 footerSelector.textContent=siteContent['footer']['copyright'];
+
+headerNav1.style.color='green';
+headerNav2.style.color='green';
+headerNav3.style.color='green';
+headerNav4.style.color='green';
+headerNav5.style.color='green';
+headerNav6.style.color='green';
+
+// navigation.style.color='red';
+
+let a = document.createElement("a");
+navigation.appendChild(a);
+a.textContent='Shop'
+a.style.color='green'
+
+let b = document.createElement("b");
+navigation.prepend(b);
+b.textContent='Home'
+b.style.color='green'
+
 
